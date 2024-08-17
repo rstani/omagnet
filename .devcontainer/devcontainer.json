@@ -1,0 +1,29 @@
+{
+    "dockerComposeFile": [
+        "../docker-compose.yml",
+        "docker-compose.yml"
+    ],
+    "service": "app",
+    "workspaceFolder": "/usr/src/app",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.formatting.provider": "black",
+                "editor.formatOnSave": true,
+                "editor.format.Enable": true
+            },
+            "extensions": [
+                "batisteo.vsocde-django",
+                "editorconfig.editorconfig",
+                "ms-python.python"
+            ]
+        }
+    },
+    "forwardPorts": [
+        8080
+    ],
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {},
+        "ghcr.io/devcontainers/features/git:1": {}
+    }
+}

@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      args:
+        POETRY_ARGS: "--with dev"
+    command: sleep infinity
+    entrypoint: ""
