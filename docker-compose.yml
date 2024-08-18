@@ -3,6 +3,7 @@ version: "3.8"
 x-base: &base
   build:
     context: .
+  image: omagnet-app:0.0.1
   environment:
     test_var: ${test_var:-sample}
 

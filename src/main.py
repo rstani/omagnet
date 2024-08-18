@@ -1,5 +1,6 @@
 from fastapi import FastAPI, BackgroundTasks, HTTPException
 from pydantic import BaseModel
+from datetime import datetime
 import time  # Simulate a long-running process
 
 app = FastAPI()
@@ -19,12 +20,11 @@ def execute_command_and_parse(job_id: str, command_request: CommandRequest):
     raw_output = f"Simulated raw output from {command_request.command}"
 
     # Simulate template-based parsing
-    parsed_output = f"Parsed: {raw_output}"
+    parsed_output = {"Ouput": raw_output, "timestamp": datetime.now().isoformat()}
 
     # If no template is found, use AI (simulated)
     if "no template" in parsed_output:
         parsed_output = f"AI Parsed: {raw_output}"
-
     # Store the result
     job_results[job_id] = parsed_output
 
