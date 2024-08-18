@@ -6,12 +6,13 @@ from src.main import app
 
 client = TestClient(app)
 
+
 def test_execute_command():
     data = {
         "ip": "192.168.0.1",
         "command": "show ip interface brief",
         "username": "admin",
-        "password": "password"
+        "password": "password",
     }
     response = client.post("/execute-command/", json=data)
     assert response.status_code == 200
