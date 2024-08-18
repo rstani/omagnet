@@ -1,7 +1,8 @@
-from fastapi import FastAPI, BackgroundTasks, HTTPException
-from pydantic import BaseModel
-from datetime import datetime
 import time  # Simulate a long-running process
+from datetime import datetime
+
+from fastapi import BackgroundTasks, FastAPI, HTTPException
+from pydantic import BaseModel
 
 app = FastAPI()
 
