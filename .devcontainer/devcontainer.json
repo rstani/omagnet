@@ -34,13 +34,13 @@
                 "ms-python.isort",
                 "ms-python.vscode-pylance"
             ]
-        },
-        "forwardPorts": [
-            8080
-        ],
-        "features": {
-            "ghcr.io/devcontainers/features/common-utils:2": {},
-            "ghcr.io/devcontainers/features/git:1": {}
         }
+    },
+    "forwardPorts": [
+        8080
+    ],
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {},
+        "ghcr.io/devcontainers/features/git:1": {}
     }
 }
