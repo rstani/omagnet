@@ -11,6 +11,8 @@ fastapi = "^0.112.1"
 netmiko = "^4.4.0"
 uvicorn = "^0.30.6"
 pydantic = "^2.8.2"
+sqlalchemy = "^2.0.0"  # Added for database interaction
+psycopg2-binary = "^2.9.0"  # Added for PostgreSQL database adapter
 
 [tool.poetry.group.dev.dependencies]
 isort = "^5.13.2"
